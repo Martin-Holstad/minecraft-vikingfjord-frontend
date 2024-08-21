@@ -1,0 +1,57 @@
+.playerMenu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.527);
+  height: 100vh;
+  width: 160px;
+  padding: 15px 10px 10px 10px;
+  z-index: 1;
+  transition: left 0.5s ease;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 0px 20px 0px;
+}
+
+.headerContainer p {
+  color: #fff;
+  margin: 0px;
+}
+
+.headerContainer span {
+  color: #fff;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.player p {
+  font-size: 14px;
+}
+
+.player img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+  .playerMenu {
+    left: -100%;
+    background-color: black;
+  }
+
+  .active {
+    left: 0;
+    display: block;
+  }
+}

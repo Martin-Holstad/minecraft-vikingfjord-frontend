@@ -1,0 +1,29 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.normal {
+  border-color: #fff;
+  color: var(--secondary-colour);
+  background: #fff;
+}
+
+.error {
+  border-color: red;
+  color: white;
+  background: red;
+}
+
+.warning {
+  color: white;
+  background: rgb(216, 148, 0);
+}
+
+.success {
+  border-color: green;
+  color: white;
+  background: green;
+}

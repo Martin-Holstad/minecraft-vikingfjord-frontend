@@ -1,0 +1,105 @@
+.serverStatus {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.685);
+  height: 50px;
+  width: 100%;
+}
+
+.signal {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.onlineText {
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.onlineTextRed {
+  color: rgb(180, 1, 1);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.signalLight {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: green;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+  }
+}
+
+.signalLightRed {
+  background-color: red;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  animation: pulseRed 1.5s infinite;
+}
+
+@keyframes pulseRed {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.time img {
+  width: 17px;
+  height: 17px;
+  object-fit: cover;
+}
+
+.time p {
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.version {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.version img {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+}
+
+.version p {
+  font-size: 14px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}

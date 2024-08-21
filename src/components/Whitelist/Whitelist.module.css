@@ -1,0 +1,54 @@
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 150px 0px;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/background.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+
+.logo {
+  margin: 80px 0px 20px 0px;
+}
+
+.main h1 {
+  font-size: 65px;
+  color: rgb(216, 148, 0);
+  margin: 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo img {
+    width: 400px;
+  }
+
+  .main h1 {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .logo img {
+    width: 300px;
+  }
+
+  .main h1 {
+    font-size: 45px;
+  }
+}
