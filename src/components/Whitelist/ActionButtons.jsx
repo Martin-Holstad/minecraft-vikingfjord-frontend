@@ -22,7 +22,7 @@ export default function ActionButtons() {
 
   function copy() {
     setCopied(true);
-    const serverAddress = "hcenter:25565";
+    const serverAddress = "15.204.68.163:24772";
     navigator.clipboard.writeText(serverAddress);
   }
 
